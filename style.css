@@ -1,0 +1,80 @@
+/* Barcha elementlar uchun umumiy sozlamalar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Sahifaning fon rasmi sozlamalari */
+body {
+    background: url(https://miro.medium.com/v2/resize:fit:1400/1*Og6agp_9hK3qio3WKB1NfA.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Asosiy konteynerni markazga joylashtirish */
+.wrapper {
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%); /* Markazga siljitish */
+    top: 50%;
+    left: 50%;
+}
+
+/* Iqtibos bloki uchun stil */
+.container {
+    width: 100%;
+    background-color: #880bad; /* Asosiy fon rangi (binafsha) */
+    padding: 50px 40px;
+    /* Ko'lanka effekti, ranglari biroz g'alati tanlangan, e'tibor bering: hsl(152, 89%, 45%) yashil-sariq. */
+    box-shadow: 0 20px 65px hsl(152, 89%, 45%); 
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Konteynerning orqasidagi dekorativ element */
+.container:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #108dc7f8; /* Ko'k rang */
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+
+/* Iqtibos matni (<p>) stili */
+.container p {
+    color: #000000; /* Qora rang */
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* Muallif nomi (<h3>) stili */
+.container h3 {
+    color: hsl(29, 100%, 46%); /* To'q sariq rang */
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Tugma (<button>) stili */
+.container button {
+    background-color: #17be36; /* Yashil rang */
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d8ff13; /* Sariq rang */
+    cursor: pointer;
+    transition: background-color 0.3s; /* O'zgartirishni yumshatish */
+}
+
+.container button:hover {
+    background-color: #12a32c; /* Tugma ustiga kelganda rangni o'zgartirish */
+}
+
